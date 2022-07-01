@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MeterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Meter Type Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_type_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Meter Type"
+            app:helperText="enter characters"
+            app:helperTextEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/meter_type_autocomplete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Meter Make Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_make_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Meter Make"
+            app:helperText="enter characters"
+            app:helperTextEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/meter_make_autocomplete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Manufacturing Year Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/man_year_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Manufacturing Year"
+            app:counterEnabled="true"
+            app:counterMaxLength="04"
+            app:counterOverflowTextAppearance="@style/counterOverride"
+            app:counterTextAppearance="@style/counterText"
+            app:helperText="* only numeric characters"
+            app:helperTextEnabled="true">
+
+            <EditText
+                android:id="@+id/man_year_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Meter Serial No. Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_serial_no_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Meter_Serial_No."
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:counterOverflowTextAppearance="@style/counterOverride"
+            app:counterTextAppearance="@style/counterText"
+            app:helperText="* only numeric characters"
+            app:helperTextEnabled="true">
+
+            <EditText
+                android:id="@+id/meter_Serial_no_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Meter Capacity Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_capacity_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Meter capacity"
+            app:helperText="enter characters"
+            app:helperTextEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/meter_capacity_autocomplete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Meter Energization Date Text Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enerz_date_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Energization Date"
+            app:counterOverflowTextAppearance="@style/counterOverride"
+            app:counterTextAppearance="@style/counterText"
+            app:helperText="* only numeric characters"
+            app:helperTextEnabled="true">
+
+            <EditText
+                android:id="@+id/enerz_date_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!-- Meter whether in Warranty -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_warranty_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="In Warranty"
+            app:helperText="YES / NO"
+            app:helperTextEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/meter_warranty_autocomplete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/meter_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:text="SUBMIT"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textSize="20sp"></Button>
+
+
+
+    </LinearLayout>
+</ScrollView>

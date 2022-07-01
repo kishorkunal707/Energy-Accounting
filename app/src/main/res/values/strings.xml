@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Energy Accounting</string>
+    <string name="asset_ui">Map Asset</string>
+    <string name="meter_activity">System Meter Data</string>
+    <string name="transformer_activity">Transformer Data</string>
+
+
+</resources>
